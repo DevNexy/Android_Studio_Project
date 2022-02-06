@@ -1,0 +1,156 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnSelf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="자기소개" />
+    <Switch
+        android:id="@+id/schIntroduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="소개 보이기" />
+    <Button
+        android:id="@+id/btnName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="이름" />
+    <Button
+        android:id="@+id/btnMajor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="전공" />
+    <Button
+        android:id="@+id/btnAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="나이" />
+    <Button
+        android:id="@+id/btnBlood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="혈액형" />
+    <Button
+        android:id="@+id/btnCareer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="진로" />
+    <Button
+        android:id="@+id/btnGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="이 과목 목표" />
+    <Button
+        android:id="@+id/btnSite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:backgroundTint="#676767"
+        android:textStyle="bold"
+        android:text="즐겨찾는 사이트" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" >
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#676767"
+            android:textStyle="bold"
+            android:text="과제 서랍 손잡이" />
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#466291"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="여기는 서랍 안입니다."
+                android:textSize="20dp" />
+            <Button
+                android:id="@+id/btnNewActivity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="그림판"/>
+
+            <Button
+                android:id="@+id/btnNewActivity1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="간단 포토샵"/>
+            <Button
+                android:id="@+id/btnNewActivity2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="명화 투표앱"/>
+            <Button
+                android:id="@+id/btnNewActivity3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="예약앱"/>
+            <Button
+                android:id="@+id/btnNewActivity4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="간단 계산기"/>
+            <Button
+                android:id="@+id/btnNewActivity5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#676767"
+                android:textStyle="bold"
+                android:text="일기장"/>
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+</LinearLayout>
